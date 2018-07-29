@@ -11,11 +11,6 @@ namespace MDIEditor
             InitializeComponent();
         }
 
-        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
         private void MntFile_DropDownOpening(object sender, EventArgs e)
         {
             mniSave.Enabled = ActiveMdiChild != null;
@@ -58,6 +53,7 @@ namespace MDIEditor
             if (editDialog == null)
                 return;
 
+            editDialog.Close();
         }
 
         private void MniSave_Click(object sender, EventArgs e)
@@ -66,6 +62,7 @@ namespace MDIEditor
             if (editDialog == null)
                 return;
 
+            editDialog.Save();
         }
 
         private void MniEnd_Click(object sender, EventArgs e)

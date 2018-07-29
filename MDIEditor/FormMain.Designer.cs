@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mntFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mniNew = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,14 +43,6 @@
             this.mniMdiSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 539);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(784, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
             // 
             // menuStrip1
             // 
@@ -134,35 +125,34 @@
             // mniHorizontal
             // 
             this.mniHorizontal.Name = "mniHorizontal";
-            this.mniHorizontal.Size = new System.Drawing.Size(180, 22);
+            this.mniHorizontal.Size = new System.Drawing.Size(129, 22);
             this.mniHorizontal.Text = "&Horizontal";
             this.mniHorizontal.Click += new System.EventHandler(this.MniHorizontal_Click);
             // 
             // mniVertical
             // 
             this.mniVertical.Name = "mniVertical";
-            this.mniVertical.Size = new System.Drawing.Size(180, 22);
+            this.mniVertical.Size = new System.Drawing.Size(129, 22);
             this.mniVertical.Text = "&Vertical";
             this.mniVertical.Click += new System.EventHandler(this.MniVertical_Click);
             // 
             // mniCascade
             // 
             this.mniCascade.Name = "mniCascade";
-            this.mniCascade.Size = new System.Drawing.Size(180, 22);
+            this.mniCascade.Size = new System.Drawing.Size(129, 22);
             this.mniCascade.Text = "&Cascaded";
             this.mniCascade.Click += new System.EventHandler(this.MniCascade_Click);
             // 
             // mniMdiSeparator
             // 
             this.mniMdiSeparator.Name = "mniMdiSeparator";
-            this.mniMdiSeparator.Size = new System.Drawing.Size(177, 6);
+            this.mniMdiSeparator.Size = new System.Drawing.Size(126, 6);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -170,7 +160,6 @@
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MDI Editor";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -179,7 +168,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mntFile;
         private System.Windows.Forms.ToolStripMenuItem mniNew;
